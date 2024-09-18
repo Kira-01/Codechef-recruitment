@@ -3,4 +3,4 @@
 
 * Cryptocurrency
 * Healthcare
-* readme file in cryptocurrency directory
+* readme file in the cryptocurrency directory
