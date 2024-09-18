@@ -22,6 +22,8 @@ nav {
 
 nav ul {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -95,6 +97,8 @@ nav a:hover {
 
 .coin-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     right: 50px;
@@ -108,19 +112,62 @@ nav a:hover {
     border-radius: 5px;
     padding: 10px 20px;
     margin: 4px 15px;
+    width: 240px;
 }
 
 .coin img {
     width: 45px;
     height: 45px;
+    float: left;
 }
 
 .words{
     padding: 4px;
     margin: 0px 10px;
     line-height: 25px;
+    float: left;
 }
 
 .words p {
     color: #FF9800;
+}
+
+
+@media(max-width: 950px){
+    nav ul{
+        flex-wrap: wrap;
+    }
+    btn ul li{
+        margin: 10px 20px;
+    }
+    #logo{
+        margin: 45px;
+    }
+    
+}
+
+@media(max-width: 650px){
+    .coin-list{
+        flex-direction: column;
+    }
+
+    .content{
+        margin: 20px 30px;
+        float: left;
+        align-items: center;
+    }
+    .coin{
+        float: left;
+        margin-bottom: 20px;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
